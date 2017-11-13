@@ -1,0 +1,19 @@
+创建Qt Designer插件，实际上并不是十分的复杂，最主要的就是理解几个类的使用方法及几个宏的使用方法。
+在明白过这些类与宏的使用后，就可以创建自定义的Qt Designer插件了。
+
+这些类包括：
+  QDesignerCustomWidgetInterface/QDesignerCustomWidgetCollectionInterface...
+这些宏包括：
+  Q_INTERFACES()/Q_EXPORT_PLUGIN2/QDESIGNER_WIDGET_EXPORT...
+  
+这些类主要是提供了一些接口，这些接口能被Qt Designer 识别，同时这些宏也提供了一些内容来使
+Qt Designer来使用，这样Qt Designer就能够获取到自己所需要的内容，也就识别自己所创建的自
+定义控件。
+
+现在的水平也就是能够创建一些简单的控件而已，更复杂的控件还有待学习。
+
+不能够灵活的使用这些类与宏主要是因为自己还没有了解自定义控件实现的内在机制，这些内在机制才是
+真正的知识。才是真正需要掌握的，其他的一切基本是徒劳的，因为没有任何的技巧与技术可言，纯粹是
+一种机械性的劳动。
+
+创建自定义控件另外一个能使用到的知识点是Qt的属性系统。这个特性也是很有用的。
